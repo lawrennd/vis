@@ -16,6 +16,7 @@ dir: data
 ~/mlprojects/vis/matlab/data/SS1flag.sag
 ~/mlprojects/vis/matlab/data/SS1A.tif
 ~/mlprojects/vis/matlab/data/SS1B.tif
+~/mlprojects/vis/matlab/data/SS1.sag
 ~/mlprojects/vis/matlab/data/ss1_spot.dat
 ~/mlprojects/vis/matlab/data/SS6flag.sag
 ~/mlprojects/vis/matlab/data/ss6_spot.dat

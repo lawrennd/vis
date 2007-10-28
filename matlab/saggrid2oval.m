@@ -1,6 +1,6 @@
 function ovals = saggrid2oval(saggrids)
 
-% SAGGRID2OVALS Converts a saggrid into ovals.
+% SAGGRID2OVAL Converts a saggrid into ovals.
 % FORMAT
 % DESC this function takes an array of
 % structures which represents grids in the scanalyze grid format and
@@ -34,7 +34,7 @@ for i = 1:length(saggrids)
 	  radiusY = saggrids(i).heightOverride(j, k)/2;
 	end
       end
-      ovals(counter) = ovalcreate(points(counter, :), radiusX, radiusY);
+      ovals(counter) = ovalCreate(points(counter, :), radiusX, radiusY);
       ovals(counter).selected = 0;
     end
   end

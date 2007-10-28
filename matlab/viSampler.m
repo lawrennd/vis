@@ -51,12 +51,12 @@ for iters = 1:maxIters
   % Display objects
   if display > 1
     if iters > 1
-      objectdelete(objects);
+      objectDelete(objects);
     end
     for i = 1:numSamps
       objects(i) = objectpak(samples(i, :), object);
     end
-    objects = objectdraw(objects);
+    objects = objectDraw(objects);
     drawnow
   end
     
@@ -64,7 +64,7 @@ for iters = 1:maxIters
   maxSampl = max(sampl);
   if maxSampl < 0 & iters >= minIters
     if display > 1
-      objectdelete(objects);
+      objectDelete(objects);
     end
     samples = objectunpak(object);
     weights = 1;

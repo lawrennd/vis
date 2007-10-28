@@ -51,7 +51,7 @@ options(2) = numSamps; % Number of Samples
 options(3) = maxIters;              % Maximum number of iterations
 options(4) = 10; % max iterations in the inner (quicker) loop
 
-oval = ovalcreate(priors{1}.mu, priors{2}.mu(1), priors{2}.mu(2));
+oval = ovalCreate(priors{1}.mu, priors{2}.mu(1), priors{2}.mu(2));
 % group One is centres, group 2 is the radii
 [samples, weights] = viSampler('ovalLikelihood', [ones(1, 2) ones(1, 2)*2], ...
 			       options, priors, ...
@@ -61,7 +61,7 @@ for i = 1:size(samples, 1)
   ovals(i) = ovalpak(samples(i, :), oval);
 end
 if display > 1
-  ovals = ovaldraw(ovals);
+  ovals = ovalDraw(ovals);
   if length(ovals) ==1 
     set(ovals.handle, 'color', [1 0 0])
   end

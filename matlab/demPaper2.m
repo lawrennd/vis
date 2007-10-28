@@ -1,4 +1,4 @@
-% DEMOPAPER2 This script recreates a Bioinformatics paper experiment.
+% DEMPAPER2 This script recreates a Bioinformatics paper experiment.
 
 % VIS
 

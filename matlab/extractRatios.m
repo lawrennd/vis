@@ -9,3 +9,6 @@ function [ratios, log2Ratios, redValues, greenValues, redBackground, greenBackgr
 %
 % version 0.1 
 % Copyright (c) Neil Lawrence 2002
+
+% VIS
+  

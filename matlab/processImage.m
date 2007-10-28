@@ -174,7 +174,7 @@ for i = gridRange
     radiusX = importanceWeights'*radiiX;
 
     % Create ovals at the mean values
-    meanOvals(spotNo) = ovalcreate([centreX centreY], radiusX, radiusY);
+    meanOvals(spotNo) = ovalCreate([centreX centreY], radiusX, radiusY);
     saggridsOut(i).widthOverride(sagGridRow, sagGridCol) = meanOvals(spotNo).xradius*2;
     saggridsOut(i).heightOverride(sagGridRow, sagGridCol) = meanOvals(spotNo).yradius*2;
     offSets = meanOvals(spotNo).centre - origOvals(spotNo).centre;

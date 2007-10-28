@@ -17,6 +17,8 @@ function [iSub, jSub] = ovalsubscript(ovals)
 % Version 0.1
 % Copyright (c) Neil Lawrence 2001
 
+% VIS
+  
 maxArea = 0;
 for i = 1:length(ovals)
   maxArea = maxArea + 4*ovals(i).xradius*ovals(i).yradius;

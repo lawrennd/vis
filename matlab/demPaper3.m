@@ -1,5 +1,6 @@
-% DEMOPAPER3 This script recreates a Bioinformatics paper experiment.
+% DEMPAPER3 This script recreates a Bioinformatics paper experiment.
 
+% VIS
 
 % Process the data given this grid
 answer = processImage('SS6', 0);

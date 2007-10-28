@@ -10,6 +10,8 @@ function ovals = ovalsample(mu, Sigma, numSamps, ovals)
 % version 0.1 
 % Copyright (c) Neil Lawrence 2002
 
+% VIS
+  
 values = gsamp(mu, Sigma, numSamps);
 
 if nargin > 3
@@ -22,7 +24,7 @@ if nargin > 3
   end
 else
   for i = 1:numSamps
-    ovals(i) = ovalcreate([values(i, 1) values(i, 2)], ...
+    ovals(i) = ovalCreate([values(i, 1) values(i, 2)], ...
 	values(i, 3), values(i, 4));
     ovals(i).selected = 0;
   end

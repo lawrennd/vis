@@ -3,7 +3,10 @@ function [ovals, importanceWeights] = microarrayOvals(imageData, centrePrior, ra
 						  lowerBackground, upperBackground, dustSpotPoint, ...
 						  numSamps, display, maxIters, ...
 						  pauseTrue);
-  % MICROARRAYOVALS 
+% MICROARRAYOVALS Plot progress of oval sampling for demos.
+
+% VIS
+
 if nargin < 12
   pauseTrue = 0;
 end
@@ -48,15 +51,15 @@ for iters = 1:maxIters
     ovals = ovalsample(mbar, Sigma, numSamps, ovals);
   end
   % Add an oval with no pixels in it.
-  ovals(end+1) = ovalcreate(centrePrior.mu, 0, 0);
+  ovals(end+1) = ovalCreate(centrePrior.mu, 0, 0);
   sampl = ovalll(ovals, imageData);
   if iters > 2 & max(sampl) == sampl(end)
-    objectdelete(ovals);
-    ovals = ovalcreate(centrePrior.mu, radiusPrior.mu(1), ...
+    objectDelete(ovals);
+    ovals = ovalCreate(centrePrior.mu, radiusPrior.mu(1), ...
 		       radiusPrior.mu(2));
     ovals(end).selected = 0;
     if display > 1
-      ovals = ovaldraw(ovals);
+      ovals = ovalDraw(ovals);
       set(ovals(end).handle, 'color', [1 0 0])
     end
     importanceWeights = 1;
@@ -68,7 +71,7 @@ for iters = 1:maxIters
   if display > 1
     [sampl, order] = sort(sampl);
     ovals = ovals(order);
-    ovals = ovaldraw(ovals);
+    ovals = ovalDraw(ovals);
   end
   % Normalise the likelihoods into importance weights
   sampl = sampl - max(sampl);
@@ -83,8 +86,8 @@ for iters = 1:maxIters
 	  set(ovals(i).handle, 'color', [1 0 0])
 	  set(ovals(i).handle, 'lineWidth', 1)
 	else
-	  objectdelete(ovals(i));
-	  ovals(i) = ovaldraw(ovals(i));
+	  objectDelete(ovals(i));
+	  ovals(i) = ovalDraw(ovals(i));
 	  set(ovals(i).handle, 'color', [1 1 0])
           if importanceWeights(i)>0
             set(ovals(i).handle, 'linewidth', log(importanceWeights(i)* ...

@@ -2,6 +2,8 @@ function params = ovalunpak(ovals)
 
 % OVALUNPAK Take an array of ovals and convert into a matrix of their parameters.
 
+% VIS
+  
 numOvals = length(ovals);
 params = zeros(numOvals, 8);
 

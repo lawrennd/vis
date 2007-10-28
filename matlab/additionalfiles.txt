@@ -1,0 +1,24 @@
+# These are files that should be packaged for the VIS software
+dir: .
+~/mlprojects/vis/matlab/ovalll.cpp
+~/mlprojects/vis/matlab/ovalll.dll
+~/mlprojects/vis/matlab/ovalll.mexglx
+~/mlprojects/vis/matlab/ovalll.mexsol
+~/mlprojects/vis/matlab/extractRatios.cpp
+~/mlprojects/vis/matlab/extractRatios.dll
+~/mlprojects/vis/matlab/extractRatios.mexglx
+~/mlprojects/vis/matlab/extractRatios.mexsol
+dir: html
+~/mlprojects/vis/html/index.html
+dir: data
+~/mlprojects/vis/matlab/data/R1SS1.sag
+~/mlprojects/vis/matlab/data/R2SS1.sag
+~/mlprojects/vis/matlab/data/SS1flag.sag
+~/mlprojects/vis/matlab/data/SS1A.tif
+~/mlprojects/vis/matlab/data/SS1B.tif
+~/mlprojects/vis/matlab/data/ss1_spot.dat
+~/mlprojects/vis/matlab/data/SS6flag.sag
+~/mlprojects/vis/matlab/data/ss6_spot.dat
+~/mlprojects/vis/matlab/data/SS6A.tif
+~/mlprojects/vis/matlab/data/SS6B.tif
+~/mlprojects/vis/matlab/data/SS6.sag

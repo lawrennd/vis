@@ -1,0 +1,20 @@
+<head>
+<title>Variational Importance Sampler - cDNA Array Spot Detection - MATLAB Software</title>
+</head>
+
+<body><div class="section">
+
+<h1>VIS Software</h1>
+
+<p>This page describes examples of how to use the fast Gaussian process latent variable model Software (FGPLVM).
+
+RELEASEINFORMATION
+
+<h4>Older Versions</h4>
+<p>Vs 0.3 Released 19 August 2003 - See <a href="readme.txt">readme.txt</a> for 
+changes.<br>
+<a href="vrs0p2">Vs 0.2</a> Released 24 June 2003<br>
+<a href="vrs0p1/">Vs 0.1</a> Released January 2003</p>
+
+
+

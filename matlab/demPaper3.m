@@ -3,16 +3,16 @@
 % VIS
 
 % Process the data given this grid
-answer = processImage('SS6', 0);
+answer = processImage('./data/SS6', 0);
 
 % Save the results in a csv file
 ratiocsvwrite('demoPaper3.csv', answer);
 
 % Load manually placed flags showing where dust-spots are
-sagFlag = sagread('SS6flag.sag');
+sagFlag = sagread('./data/SS6flag.sag');
 
 % Load data extracted from spot
-spotLog2Ratio = spotlog2('ss6_spot.dat');
+spotLog2Ratio = spotlog2('./data/ss6_spot.dat');
 
 % Number of spots in each grid
 numPerGrid = 15*16;

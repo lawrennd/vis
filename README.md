@@ -1,35 +1,23 @@
 Combining Variational Methods with Sampling
 ===========================================
 
-The variational importance sampler is an hybrid algorithm which combines
-sampling with variational approaches to solve intractable integrals,
-particularly in the context of Bayesian inference.
+The variational importance sampler is an hybrid algorithm which combines sampling with variational approaches to solve intractable integrals, particularly in the context of Bayesian inference.
 
 ### Papers
 
 Pre-prints of three papers which use or describe the approach are:
 
-*[Reducing the Variability in cDNA Microarray Image Processing by
-Bayesian
-Inference](http://ml.sheffield.ac.uk/~neil/cgi-bin/publications/bibpage.cgi?keyName=Lawrence:variability03&printAbstract=1)*
-by Neil D. Lawrence, Marta Milo, Mahesan Niranjan, Penny Rashbass and
-Stephan Soullier
+*[Reducing the Variability in cDNA Microarray Image Processing by Bayesian Inference](http://ml.sheffield.ac.uk/~neil/cgi-bin/publications/bibpage.cgi?keyName=Lawrence:variability03&printAbstract=1)* by Neil D. Lawrence, Marta Milo, Mahesan Niranjan, Penny Rashbass and Stephan Soullier
 
-*[Bayesian Processing of Microarray
-Images](http://ml.sheffield.ac.uk/~neil/cgi-bin/publications/bibpage.cgi?keyName=Lawrence:microarray03&printAbstract=1)*
-by Neil D. Lawrence, Marta Milo, Mahesan Niranjan, Penny Rashbass and
-Stephan Soullier
+*[Bayesian Processing of Microarray Images](http://ml.sheffield.ac.uk/~neil/cgi-bin/publications/bibpage.cgi?keyName=Lawrence:microarray03&printAbstract=1)*
+by Neil D. Lawrence, Marta Milo, Mahesan Niranjan, Penny Rashbass and Stephan Soullier
 
-*[Variational Inference for Visual
-Tracking](http://ml.sheffield.ac.uk/~neil/cgi-bin/publications/bibpage.cgi?keyName=Vermaak:variational03&printAbstract=1)*
-by ** Jaco Vermaak, Neil D. Lawrence and Patrick Pérez (PDF)
+*[Variational Inference for Visual Tracking](http://ml.sheffield.ac.uk/~neil/cgi-bin/publications/bibpage.cgi?keyName=Vermaak:variational03&printAbstract=1)* by Jaco Vermaak, Neil D. Lawrence and Patrick Pérez (PDF)
 
 This paper gives an brief, non-exhaustive introduction to variational
 inference:
 
-*[Variational Inference
-Guide](http://ml.sheffield.ac.uk/~neil/cgi-bin/publications/bibpage.cgi?keyName=lawrence:variationalguide02&printAbstract=1)*
-by Neil D. Lawrence (gzipped postscript)
+*[Variational Inference Guide](http://ml.sheffield.ac.uk/~neil/cgi-bin/publications/bibpage.cgi?keyName=lawrence:variationalguide02&printAbstract=1)* by Neil D. Lawrence
 
 ### Software for Microarray Analysis
 
@@ -62,5 +50,9 @@ Vs 0.3 Released 19 August 2003 - See [readme.txt](./matlab/readme.txt) for
 changes.
 [Vs 0.2](vrs0p2) Released 24 June 2003
 [Vs 0.1](vrs0p1) Released January 2003
+
+
+[![Video of Variational Importance Sampler Operating](http://img.youtube.com/vi/E2nwg2X31_M/0.jpg)](http://www.youtube.com/watch?v=E2nwg2X31_M)
+
 
 Page updated on Mon Oct 29 00:18:02 2007
